@@ -1,31 +1,36 @@
-
-
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
+n.queue=[];
+t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1502901651596323');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
+
+<noscript>
+<img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1502901651596323&ev=PageView&noscript=1"
-/></noscript>
+/>
+</noscript>
 <!-- End Meta Pixel Code -->
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title></title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -42,6 +47,53 @@ align-items:center;
 background:linear-gradient(135deg,#050505,#111827);
 color:white;
 }
+
+/* ===== 1 SECOND LOADER ===== */
+
+#page-loader{
+position:fixed;
+inset:0;
+width:100%;
+height:100%;
+background:#050505;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:99999;
+transition:opacity .35s ease, visibility .35s ease;
+}
+
+#page-loader.hide{
+opacity:0;
+visibility:hidden;
+pointer-events:none;
+}
+
+.loader-spinner{
+width:55px;
+height:55px;
+border:5px solid rgba(251,191,36,.20);
+border-top:5px solid #fbbf24;
+border-radius:50%;
+animation:loader-spin .7s linear infinite;
+}
+
+.loader-text{
+margin-top:15px;
+color:#fbbf24;
+font-size:13px;
+font-weight:700;
+letter-spacing:2px;
+}
+
+@keyframes loader-spin{
+100%{
+transform:rotate(360deg);
+}
+}
+
+/* ===== MAIN PAGE ===== */
 
 .container{
 width:90%;
@@ -145,37 +197,38 @@ text-decoration:none;
 }
 
 @keyframes float{
-50%{transform:translateY(-8px);}
+50%{
+transform:translateY(-8px);
+}
 }
 
 @keyframes pulse{
-50%{box-shadow:0 0 35px rgba(251,191,36,.9);}
+50%{
+box-shadow:0 0 35px rgba(251,191,36,.9);
+}
 }
 
 @keyframes fadeIn{
-from{opacity:0;transform:translateY(20px);}
-to{opacity:1;transform:translateY(0);}
+from{
+opacity:0;
+transform:translateY(20px);
 }
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
 </style>
 </head>
-  <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2554275975039916');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2554275975039916&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+
 <body>
+
+<!-- ===== 1 SECOND LOADER ===== -->
+<div id="page-loader">
+<div class="loader-spinner"></div>
+<div class="loader-text">LOADING...</div>
+</div>
 
 <div class="container">
 
@@ -183,7 +236,7 @@ src="https://www.facebook.com/tr?id=2554275975039916&ev=PageView&noscript=1"
 
 <img src="image.png" class="logo">
 
-<h1>CA Sir </h1>
+<h1>CA Sir</h1>
 
 <p class="subtitle">
 📊 NIFTY & BANKNIFTY Analysis<br>
@@ -193,6 +246,7 @@ src="https://www.facebook.com/tr?id=2554275975039916&ev=PageView&noscript=1"
 </p>
 
 <div class="stats">
+
 <div class="stat">
 <strong>26K+</strong>
 <span>Members</span>
@@ -202,6 +256,7 @@ src="https://www.facebook.com/tr?id=2554275975039916&ev=PageView&noscript=1"
 <strong>Daily</strong>
 <span>Updates</span>
 </div>
+
 </div>
 
 <a href="https://telegram.me/+qSvpZaTaNX5mMWQ1" class="btn">
@@ -213,15 +268,33 @@ Free Access • Educational Content • Beginner Friendly
 </div>
 
 <div class="footer">
+
 For Educational Purposes Only. Trading Involves Risk.
 <br>
 
-<a href="https://telegram.me/+qSvpZaTaNX5mMWQ1" class="ads" target="_blank">
+<a href="https://telegram.me/+qSvpZaTaNX5mMWQ1"
+class="ads"
+target="_blank">
 🚀 Ads Managed By Sivi Ads
 </a>
+
 </div>
 
 </div>
+
+<!-- ===== LOADER SCRIPT ===== -->
+<script>
+window.addEventListener("load", function(){
+
+setTimeout(function(){
+
+document.getElementById("page-loader").classList.add("hide");
+
+}, 100);
+
+});
+</script>
 
 </body>
 </html>
+```

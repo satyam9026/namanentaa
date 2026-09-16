@@ -1,331 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<!-- This site is hosted on Netlify. Anyone can build and deploy a site
-     like this one for free: https://netlify.new/?utm_campaign=ai-legible&utm_source=comment&utm_medium=referral&utm_id=6d8e20e4-27fd-403b-9a88-00bd033223c9
-     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
-<meta name="hosting-provider" content="Netlify">
-<meta name="netlify-deploy" content="https://netlify.new/?utm_campaign=ai-legible&amp;utm_source=meta&amp;utm_medium=referral&amp;utm_id=6d8e20e4-27fd-403b-9a88-00bd033223c9">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Trade With Expert</title>
+  <title>karol | NIFTY • BANKNIFTY • OPTIONS</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top, #163b35 0%, #071512 35%, #030807 100%);
+      color: #fff;
+      min-height: 100vh;
+    }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+    .container {
+      width: 100%;
+      max-width: 520px;
+      margin: auto;
+      padding: 18px 16px 35px;
+    }
 
-body{
-/* TRADING BACKGROUND IMAGE WITH DARK OVERLAY */
-background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.90)), 
-            url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1920&q=80');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-color:#fff;
-}
+    .top-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(35, 255, 163, 0.10);
+      border: 1px solid rgba(35, 255, 163, 0.25);
+      color: #43f5a7;
+      padding: 8px 13px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
 
-/* CARD */
+    .hero {
+      text-align: center;
+    }
 
-.container{
-width:95%;
-max-width:420px;
-padding:30px 25px;
-border-radius:18px;
+    .logo {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 15px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #25f39d, #0ba86b);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      font-weight: 900;
+      color: #03120d;
+      box-shadow: 0 10px 35px rgba(25, 242, 150, .20);
+    }
 
-background:rgba(15, 23, 42, 0.75);
-backdrop-filter:blur(12px);
+    h1 {
+      font-size: 31px;
+      line-height: 1.12;
+      margin-bottom: 9px;
+    }
 
-border:1px solid rgba(255,255,255,0.12);
+    .green {
+      color: #3ff3a5;
+    }
 
-box-shadow:0 20px 60px rgba(0,0,0,0.6);
-text-align:center;
-}
+    .subtitle {
+      color: #aabbb5;
+      font-size: 15px;
+      line-height: 1.55;
+      margin-bottom: 20px;
+    }
 
-/* LOGO */
+    .telegram-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      min-height: 58px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #2aabee, #168bd0);
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 800;
+      box-shadow: 0 12px 30px rgba(42, 171, 238, .22);
+      transition: .2s ease;
+      margin-bottom: 11px;
+    }
 
-.logo{
-width:80px;
-height:80px;
-border-radius:50%;
-border:2px solid #FFD700;
-margin-bottom:12px;
-object-fit: cover;
-}
+    .telegram-btn:hover {
+      transform: translateY(-2px);
+    }
 
-/* TEXT */
+    .small-note {
+      color: #7f918b;
+      font-size: 11px;
+      margin-bottom: 28px;
+    }
 
-h1{
-font-size:22px;
-color:#FFD700;
-margin-bottom:6px;
-}
+    .card {
+      background: rgba(13, 27, 23, .88);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 18px;
+      padding: 19px;
+      margin-bottom: 15px;
+    }
 
-h2{
-font-size:15px;
-opacity:0.9;
-margin-bottom:10px;
-}
+    .card-title {
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
 
-.sub{
-font-size:13px;
-opacity:0.7;
-margin-bottom:18px;
-}
+    .features {
+      display: grid;
+      gap: 12px;
+    }
 
-/* BUTTON */
+    .feature {
+      display: flex;
+      gap: 11px;
+      align-items: flex-start;
+    }
 
-.btn{
-display:block;
-text-decoration:none;
-background:#22c55e;
-color:#000;
-font-weight:700;
-padding:16px;
-border-radius:10px;
-margin:12px 0;
-transition:0.3s;
-}
+    .icon {
+      flex: 0 0 27px;
+      height: 27px;
+      border-radius: 8px;
+      background: rgba(48, 244, 158, .12);
+      color: #3ff3a5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 900;
+    }
 
-.btn:hover{
-background:#16a34a;
-transform:scale(1.03);
-}
+    .feature strong {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
 
-/* TRUST BOX */
+    .feature span {
+      color: #8fa19b;
+      font-size: 12px;
+      line-height: 1.4;
+    }
 
-.trust{
-background:rgba(0,255,150,0.08);
-padding:10px;
-border-radius:10px;
-font-size:13px;
-margin-bottom:15px;
-border:1px solid rgba(0,255,150,0.2);
-}
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 15px;
+    }
 
-/* LIST */
+    .stat {
+      background: rgba(255,255,255,.045);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 13px;
+      padding: 13px 5px;
+      text-align: center;
+    }
 
-.points{
-list-style:none;
-font-size:14px;
-text-align:left;
-margin:15px 0;
-}
+    .stat b {
+      display: block;
+      color: #42f3a4;
+      font-size: 18px;
+      margin-bottom: 3px;
+    }
 
-.points li{
-margin:8px 0;
-}
+    .stat span {
+      color: #82938e;
+      font-size: 10px;
+    }
 
-/* URGENCY */
+    .how {
+      display: grid;
+      gap: 10px;
+    }
 
-.timer{
-margin-top:10px;
-font-size:13px;
-color:#facc15;
-}
+    .step {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
 
-/* SOCIAL PROOF */
+    .number {
+      width: 29px;
+      height: 29px;
+      border-radius: 50%;
+      background: #16372e;
+      color: #42f3a4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 12px;
+    }
 
-.proof{
-margin-top:12px;
-font-size:12px;
-opacity:0.7;
-}
+    .step span {
+      color: #c1cec9;
+      font-size: 13px;
+    }
 
-/* FOOTER BRAND */
+    .risk {
+      color: #75857f;
+      font-size: 10px;
+      line-height: 1.5;
+      text-align: center;
+      margin: 20px 5px 0;
+    }
 
-.footer{
-margin-top:20px;
-font-size:12px;
-opacity:0.6;
-}
+    .sticky {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 9px 14px;
+      background: rgba(3, 8, 7, .94);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(255,255,255,.08);
+      z-index: 20;
+    }
 
-.footer a{
-color:#38bdf8;
-text-decoration:none;
-font-weight:600;
-}
+    .sticky a {
+      display: block;
+      max-width: 520px;
+      margin: auto;
+      text-align: center;
+      background: #24aee9;
+      color: white;
+      text-decoration: none;
+      padding: 14px;
+      border-radius: 12px;
+      font-weight: 800;
+      font-size: 15px;
+    }
 
-.footer a:hover{
-text-decoration:underline;
-}
+    @media (min-width: 600px) {
+      .sticky {
+        display: none;
+      }
 
-/* RISK */
-
-.risk{
-margin-top:10px;
-font-size:11px;
-opacity:0.5;
-}
-
-     /* ================= 1 SECOND LOADER ================= */
-
-#page-loader{
-position:fixed;
-inset:0;
-width:100%;
-height:100%;
-background:#0f172a;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-z-index:999999;
-transition:opacity .35s ease, visibility .35s ease;
-}
-
-#page-loader.hide{
-opacity:0;
-visibility:hidden;
-pointer-events:none;
-}
-
-.loader-spinner{
-width:58px;
-height:58px;
-border:5px solid rgba(255,215,0,.18);
-border-top:5px solid #FFD700;
-border-right:5px solid #22c55e;
-border-radius:50%;
-animation:loaderSpin .7s linear infinite;
-box-shadow:0 0 25px rgba(255,215,0,.20);
-}
-
-.loader-text{
-margin-top:15px;
-font-size:12px;
-font-weight:700;
-letter-spacing:3px;
-color:#FFD700;
-}
-
-@keyframes loaderSpin{
-to{
-transform:rotate(360deg);
-}
-}
-</style>
+      .container {
+        padding-top: 35px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-     <!-- ================= 1 SECOND LOADER ================= -->
 
-<div id="page-loader">
+  <main class="container">
 
-<div class="loader-spinner"></div>
+    <section class="hero">
 
-<div class="loader-text">
-LOADING...
-</div>
+      <div class="top-badge">
+        ● LIVE MARKET COMMUNITY
+      </div>
 
-</div>
+      <div class="">
+        
+      </div>
 
-<div class="container">
+      <h1>
+        karol<br>
+        <span class="green">NIFTY • BANKNIFTY • OPTIONS</span>
+      </h1>
 
-<img src="image.png" class="logo">
+      <p class="subtitle">
+        Daily market analysis, trade setups & educational insights
+        for traders who follow the Indian markets.
+      </p>
 
-<h1>CA Sir</h1>
-<h2>NIFTY • BANKNIFTY • OPTIONS</h2>
+      <a
+        class="telegram-btn"
+        href="https://telegram.me/+qSvpZaTaNX5mMWQ1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ✈️ Join Free Telegram Channel
+      </a>
 
-<p class="sub">
-Daily Intraday Trading Signals & Analysis
-</p>
+      <p class="small-note">
+        Free access • No payment required
+      </p>
 
-<!-- TOP BUTTON -->
-<a href="https://telegram.me/+qSvpZaTaNX5mMWQ1" class="btn">
-🚀 Join Free Telegram Channel
-</a>
+    </section>
 
-<div class="trust">
-✔ Trusted by 5,000+ Traders <br>
-✔ Daily Consistent Setups
-</div>
 
-<ul class="points">
-<li>✔ 5–7 High Probability Trades</li>
-<li>✔ Exact Entry, SL & Target</li>
-<li>✔ Beginner Friendly Guidance</li>
-<li>✔ Live Market Updates</li>
-</ul>
+    <section class="stats">
 
-<!-- BOTTOM BUTTON -->
-<a href="https://telegram.me/+qSvpZaTaNX5mMWQ1" class="btn">
-🚀 Join Free Telegram Channel
-</a>
+      <div class="stat">
+        <b>13K+</b>
+        <span>Community</span>
+      </div>
 
-<div class="timer">
-⏳ Free Access Closing Soon
-</div>
+      <div class="stat">
+        <b>FREE</b>
+        <span>To Join</span>
+      </div>
 
-<div class="proof">
-📈 Limited Seats • Active Community
-</div>
+      <div class="stat">
+        <b>DAILY</b>
+        <span>Market Updates</span>
+      </div>
 
-<p class="risk">
-⚠ Market investments are subject to risk
-</p>
+    </section>
 
-<!-- CLEAN FOOTER -->
-<div class="footer">
-Powered by 
-<a href="https://t.me/+ahlminu0Ax4yYmFl" target="_blank">
-Sivi Ads Agency
-</a>
-</div>
 
-</div>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];
-t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1502901651596323');
-fbq('track', 'PageView');
-</script>
+    <section class="card">
 
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1502901651596323&ev=PageView&noscript=1"
-/>
-</noscript>
-<!-- End Meta Pixel Code -->
+      <div class="card-title">
+        📊 What You Get
+      </div>
 
-     <!-- ================= LOADER SCRIPT ================= -->
+      <div class="features">
 
-<script>
+        <div class="feature">
+          <div class="icon">✓</div>
+          <div>
+            <strong>NIFTY & BANKNIFTY Analysis</strong>
+            <span>Market levels, scenarios and intraday observations.</span>
+          </div>
+        </div>
 
-window.addEventListener("load",function(){
+        <div class="feature">
+          <div class="icon">✓</div>
+          <div>
+            <strong>Options Market Insights</strong>
+            <span>Educational observations around options setups and levels.</span>
+          </div>
+        </div>
 
-setTimeout(function(){
+        <div class="feature">
+          <div class="icon">✓</div>
+          <div>
+            <strong>Live Market Updates</strong>
+            <span>Stay updated as important market levels develop.</span>
+          </div>
+        </div>
 
-const loader=document.getElementById("page-loader");
+        <div class="feature">
+          <div class="icon">✓</div>
+          <div>
+            <strong>Beginner Friendly</strong>
+            <span>Simple explanations designed to make market analysis easier to follow.</span>
+          </div>
+        </div>
 
-if(loader){
-loader.classList.add("hide");
-}
+      </div>
 
-},100);
+    </section>
 
-});
 
-</script>
+    <section class="card">
+
+      <div class="card-title">
+        🚀 How It Works
+      </div>
+
+      <div class="how">
+
+        <div class="step">
+          <div class="number">1</div>
+          <span>Tap on “Join Free Telegram Channel”</span>
+        </div>
+
+        <div class="step">
+          <div class="number">2</div>
+          <span>Open Telegram and join the community</span>
+        </div>
+
+        <div class="step">
+          <div class="number">3</div>
+          <span>Follow the daily market updates and analysis</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="card">
+
+      <div class="card-title">
+        🔔 Ready to Join?
+      </div>
+
+      <p style="color:#9aa9a4;font-size:13px;line-height:1.55;margin-bottom:15px;">
+        Join the Telegram community and follow the latest
+        NIFTY, BANKNIFTY and options market updates.
+      </p>
+
+      <a
+        class="telegram-btn"
+        href="https://telegram.me/+qSvpZaTaNX5mMWQ1"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="margin-bottom:0;"
+      >
+        ✈️ JOIN TELEGRAM NOW
+      </a>
+
+    </section>
+
+
+    <p class="risk">
+      Disclaimer: Trading and investments in securities and derivatives
+      involve risk. Past performance does not guarantee future results.
+      The information provided is for educational/informational purposes
+      and should not be considered a guarantee of profits or personalized
+      investment advice.
+    </p>
+
+  </main>
+
+
+  <div class="sticky">
+    <a
+      href="https://telegram.me/+qSvpZaTaNX5mMWQ1"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      ✈️ JOIN FREE TELEGRAM CHANNEL
+    </a>
+  </div>
+
 </body>
 </html>
-<script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="6d8e20e4-27fd-403b-9a88-00bd033223c9" data-app-host="app.netlify.com"></script>

@@ -1,6 +1,497 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VIP MARATHI TRADER</title>
+
+<meta name="description" content="Join King of Nifty for free daily Nifty & BankNifty analysis.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Segoe UI,sans-serif;
+    background:#f7f9fc;
+    color:#151525;
+}
+
+.container{
+    width:100%;
+    max-width:440px;
+    margin:auto;
+    padding:22px 10px;
+    text-align:center;
+}
+
+
+/* Online Bar */
+
+.online{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background:#e8f5e9;
+    color:#218739;
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:11px;
+    font-weight:bold;
+}
+
+.dot{
+    width:7px;
+    height:7px;
+    background:#22c55e;
+    border-radius:50%;
+}
+
+
+/* Profile */
+
+.profile{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin:18px auto 8px;
+    overflow:hidden;
+    border:3px solid white;
+    box-shadow:0 4px 15px #ddd;
+}
+
+.profile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+/* Title */
+
+h1{
+    font-size:20px;
+    margin:8px 0 3px;
+    font-weight:800;
+}
+
+.tag{
+    color:#0066ff;
+    font-weight:bold;
+    font-size:12px;
+}
+
+
+/* Rating */
+
+.rating{
+    margin:10px;
+    color:#ff9800;
+    font-size:16px;
+}
+
+.rating small{
+    color:#777;
+    font-size:11px;
+}
+
+
+/* Buttons */
+
+.btn{
+    position:relative;
+    display:block;
+
+    width:100%;
+    max-width:420px;
+
+    margin:14px auto;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        135deg,
+        #0066ff,
+        #004dcc
+    );
+
+    color:white;
+
+    padding:18px 8px;
+
+    border-radius:11px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+    font-size:13px;
+
+    white-space:nowrap;
+
+    box-shadow:
+        0 4px 12px #b8d0ff;
+}
+
+
+/* Sliding Light */
+
+.btn::after{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-100%;
+
+    width:45%;
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.75),
+        transparent
+    );
+
+    transform:skewX(-20deg);
+
+    animation:buttonLight 2s infinite;
+}
+
+@keyframes buttonLight{
+
+    0%{
+        left:-100%;
+    }
+
+    45%{
+        left:120%;
+    }
+
+    100%{
+        left:120%;
+    }
+
+}
+
+
+/* Stats */
+
+.stats{
+    display:flex;
+    gap:7px;
+    margin:14px 0;
+}
+
+.card{
+    flex:1;
+    background:white;
+    padding:11px 4px;
+    border-radius:11px;
+    box-shadow:0 2px 7px #eee;
+    font-size:11px;
+}
+
+.number{
+    color:#0066ff;
+    font-size:17px;
+    font-weight:bold;
+    margin-bottom:2px;
+}
+
+
+/* Content */
+
+.heading{
+    font-size:15px;
+    font-weight:bold;
+    line-height:1.4;
+}
+
+.heading span{
+    color:#0066ff;
+}
+
+.sub{
+    color:#777;
+    margin:7px;
+    font-size:11px;
+}
+
+
+/* Alert */
+
+.alert{
+    background:#fff3e0;
+    color:#e65100;
+    padding:9px;
+    border-radius:25px;
+    font-size:11px;
+    font-weight:bold;
+    margin:13px 0;
+}
+
+
+/* Features */
+
+.feature{
+    background:white;
+    padding:11px;
+    margin:7px 0;
+    border-radius:10px;
+
+    text-align:left;
+
+    display:flex;
+    gap:9px;
+    align-items:center;
+
+    box-shadow:0 2px 6px #eee;
+
+    font-size:12px;
+}
+
+.icon{
+    font-size:18px;
+}
+
+
+/* Footer */
+
+.ads{
+    margin-top:22px;
+    padding:13px;
+    border-top:1px solid #ddd;
+    font-size:11px;
+    color:#777;
+}
+
+.ads a{
+    color:#0066ff;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.disclaimer{
+    margin-top:14px;
+    font-size:9px;
+    color:#999;
+    line-height:1.4;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Online -->
+
+    <div class="online">
+        <span class="dot"></span>
+        5,947 Traders Online Now
+    </div>
+
+
+    <!-- Profile -->
+
+    <div class="profile">
+
+        <img
+        src="image.png"alt="Logo">
+
+    </div>
+
+
+    <!-- Title -->
+
+    <h1>karol
+
+    <div class="tag">
+        🏆 India's No.1 Stock Market Channel
+    </div>
+
+
+    <!-- Rating -->
+
+    <div class="rating">
+
+        ★★★★★
+
+        <br>
+
+        <small>
+            4.9/5 (2340 Reviews)
+        </small>
+
+    </div>
+
+
+    <!-- Button -->
+
+    <a
+    class="btn"
+    href="https://telegram.me/+qSvpZaTaNX5mMWQ1">
+
+        Join Free Telegram Channel →
+
+    </a>
+
+
+    <!-- Stats -->
+
+    <div class="stats">
+
+        <div class="card">
+
+            <div class="number">
+                50K+
+            </div>
+
+            Members
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="number">
+                5+
+            </div>
+
+            Years
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="number">
+                95%
+            </div>
+
+            Accuracy
+
+        </div>
+
+    </div>
+
+
+    <!-- Content -->
+
+    <div class="heading">
+
+        Get <span>FREE Daily Calls</span>
+
+        <br>
+
+        for NIFTY, BANKNIFTY & SENSEX
+
+    </div>
+
+
+    <div class="sub">
+
+        Join thousands of traders getting daily market analysis
+
+    </div>
+
+
+    <!-- Alert -->
+
+    <div class="alert">
+
+        🔥 Limited FREE Access Available
+
+    </div>
+
+
+    <!-- Features -->
+
+    <div class="feature">
+
+        <div class="icon">
+            📊
+        </div>
+
+        <div>
+            Daily Nifty & BankNifty Levels
+        </div>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="icon">
+            🎓
+        </div>
+
+        <div>
+            Educational Market Analysis
+        </div>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="icon">
+            👥
+        </div>
+
+        <div>
+            50,000+ Subscribers Community
+        </div>
+
+    </div>
+
+
+    <!-- Second Button -->
+
+    <a
+    class="btn"
+    href="https://telegram.me/+qSvpZaTaNX5mMWQ1">
+
+        Join Free Telegram Channel →
+
+    </a>
+
+
+    <!-- Disclaimer -->
+
+    <div class="disclaimer">
+
+        <strong>
+            Disclaimer:
+        </strong>
+
+        <br>
+
+        This channel is for educational purposes only.
+        Trading involves market risk.
+        Please consult your financial advisor before making investment decisions.
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="ads">
+
+        🔥 Powered by
+
+        <a href="https://t.me/+ahlminu0Ax4yYmFl">
+
+     Sivi Ads Angency
+        </a>
+
+    </div>
   <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -18,442 +509,7 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1502901651596323&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>karol | NIFTY • BANKNIFTY • OPTIONS</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background:
-        radial-gradient(circle at top, #163b35 0%, #071512 35%, #030807 100%);
-      color: #fff;
-      min-height: 100vh;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 520px;
-      margin: auto;
-      padding: 18px 16px 35px;
-    }
-
-    .top-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      background: rgba(35, 255, 163, 0.10);
-      border: 1px solid rgba(35, 255, 163, 0.25);
-      color: #43f5a7;
-      padding: 8px 13px;
-      border-radius: 50px;
-      font-size: 12px;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-
-    .hero {
-      text-align: center;
-    }
-
-    .logo-img {
-      width: 72px;
-      height: 72px;
-      margin: 0 auto 15px;
-      border-radius: 20px;
-      background: linear-gradient(135deg, #25f39d, #0ba86b);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 25px;
-      font-weight: 900;
-      color: #03120d;
-      box-shadow: 0 10px 35px rgba(25, 242, 150, .20);
-      object-fit: cover; /* Ensures the image covers the area without stretching */
-    }
-
-    h1 {
-      font-size: 31px;
-      line-height: 1.12;
-      margin-bottom: 9px;
-    }
-
-    .green {
-      color: #3ff3a5;
-    }
-
-    .subtitle {
-      color: #aabbb5;
-      font-size: 15px;
-      line-height: 1.55;
-      margin-bottom: 20px;
-    }
-
-    .telegram-btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      width: 100%;
-      min-height: 58px;
-      border-radius: 14px;
-      background: linear-gradient(135deg, #2aabee, #168bd0);
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 800;
-      box-shadow: 0 12px 30px rgba(42, 171, 238, .22);
-      transition: .2s ease;
-      margin-bottom: 11px;
-    }
-
-    .telegram-btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .small-note {
-      color: #7f918b;
-      font-size: 11px;
-      margin-bottom: 28px;
-    }
-
-    .card {
-      background: rgba(13, 27, 23, .88);
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: 18px;
-      padding: 19px;
-      margin-bottom: 15px;
-    }
-
-    .card-title {
-      font-size: 17px;
-      font-weight: 800;
-      margin-bottom: 15px;
-    }
-
-    .features {
-      display: grid;
-      gap: 12px;
-    }
-
-    .feature {
-      display: flex;
-      gap: 11px;
-      align-items: flex-start;
-    }
-
-    .icon {
-      flex: 0 0 27px;
-      height: 27px;
-      border-radius: 8px;
-      background: rgba(48, 244, 158, .12);
-      color: #3ff3a5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 14px;
-      font-weight: 900;
-    }
-
-    .feature strong {
-      display: block;
-      font-size: 14px;
-      margin-bottom: 2px;
-    }
-
-    .feature span {
-      color: #8fa19b;
-      font-size: 12px;
-      line-height: 1.4;
-    }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
-      margin-bottom: 15px;
-    }
-
-    .stat {
-      background: rgba(255,255,255,.045);
-      border: 1px solid rgba(255,255,255,.07);
-      border-radius: 13px;
-      padding: 13px 5px;
-      text-align: center;
-    }
-
-    .stat b {
-      display: block;
-      color: #42f3a4;
-      font-size: 18px;
-      margin-bottom: 3px;
-    }
-
-    .stat span {
-      color: #82938e;
-      font-size: 10px;
-    }
-
-    .how {
-      display: grid;
-      gap: 10px;
-    }
-
-    .step {
-      display: flex;
-      align-items: center;
-      gap: 11px;
-    }
-
-    .number {
-      width: 29px;
-      height: 29px;
-      border-radius: 50%;
-      background: #16372e;
-      color: #42f3a4;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      font-size: 12px;
-    }
-
-    .step span {
-      color: #c1cec9;
-      font-size: 13px;
-    }
-
-    .risk {
-      color: #75857f;
-      font-size: 10px;
-      line-height: 1.5;
-      text-align: center;
-      margin: 20px 5px 0;
-    }
-
-    .sticky {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 9px 14px;
-      background: rgba(3, 8, 7, .94);
-      backdrop-filter: blur(12px);
-      border-top: 1px solid rgba(255,255,255,.08);
-      z-index: 20;
-    }
-
-    .sticky a {
-      display: block;
-      max-width: 520px;
-      margin: auto;
-      text-align: center;
-      background: #24aee9;
-      color: white;
-      text-decoration: none;
-      padding: 14px;
-      border-radius: 12px;
-      font-weight: 800;
-      font-size: 15px;
-    }
-
-    @media (min-width: 600px) {
-      .sticky {
-        display: none;
-      }
-
-      .container {
-        padding-top: 35px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <main class="container">
-
-    <section class="hero">
-
-      <div class="top-badge">
-        ● LIVE MARKET COMMUNITY
-      </div>
-
-      <!-- IMAGE CONTAINER -->
-      <div class="logo-img">
-        <img src="ka.jpg" alt="Karol" style="width: 100%; height: 100%; border-radius: inherit; object-fit: inherit;">
-      </div>
-
-      <h1>
-        karol<br>
-        <span class="green">NIFTY • BANKNIFTY • OPTIONS</span>
-      </h1>
-
-      <p class="subtitle">
-        Daily market analysis, trade setups & educational insights
-        for traders who follow the Indian markets.
-      </p>
-
-      <a
-        class="telegram-btn"
-        href="https://telegram.me/+qSvpZaTaNX5mMWQ1"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        ✈️ Join Free Telegram Channel
-      </a>
-
-      <p class="small-note">
-        Free access • No payment required
-      </p>
-
-    </section>
-
-
-    <section class="stats">
-
-      <div class="stat">
-        <b>13K+</b>
-        <span>Community</span>
-      </div>
-
-      <div class="stat">
-        <b>FREE</b>
-        <span>To Join</span>
-      </div>
-
-      <div class="stat">
-        <b>DAILY</b>
-        <span>Market Updates</span>
-      </div>
-
-    </section>
-
-
-    <section class="card">
-
-      <div class="card-title">
-        📊 What You Get
-      </div>
-
-      <div class="features">
-
-        <div class="feature">
-          <div class="icon">✓</div>
-          <div>
-            <strong>NIFTY & BANKNIFTY Analysis</strong>
-            <span>Market levels, scenarios and intraday observations.</span>
-          </div>
-        </div>
-
-        <div class="feature">
-          <div class="icon">✓</div>
-          <div>
-            <strong>Options Market Insights</strong>
-            <span>Educational observations around options setups and levels.</span>
-          </div>
-        </div>
-
-        <div class="feature">
-          <div class="icon">✓</div>
-          <div>
-            <strong>Live Market Updates</strong>
-            <span>Stay updated as important market levels develop.</span>
-          </div>
-        </div>
-
-        <div class="feature">
-          <div class="icon">✓</div>
-          <div>
-            <strong>Beginner Friendly</strong>
-            <span>Simple explanations designed to make market analysis easier to follow.</span>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <section class="card">
-
-      <div class="card-title">
-        🚀 How It Works
-      </div>
-
-      <div class="how">
-
-        <div class="step">
-          <div class="number">1</div>
-          <span>Tap on “Join Free Telegram Channel”</span>
-        </div>
-
-        <div class="step">
-          <div class="number">2</div>
-          <span>Open Telegram and join the community</span>
-        </div>
-
-        <div class="step">
-          <div class="number">3</div>
-          <span>Follow the daily market updates and analysis</span>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <section class="card">
-
-      <div class="card-title">
-        🔔 Ready to Join?
-      </div>
-
-      <p style="color:#9aa9a4;font-size:13px;line-height:1.55;margin-bottom:15px;">
-        Join the Telegram community and follow the latest
-        NIFTY, BANKNIFTY and options market updates.
-      </p>
-
-      <a
-        class="telegram-btn"
-        href="https://telegram.me/+qSvpZaTaNX5mMWQ1"
-        target="_blank"
-        rel="noopener noreferrer"
-        style="margin-bottom:0;"
-      >
-        ✈️ JOIN TELEGRAM NOW
-      </a>
-
-    </section>
-
-
-    <p class="risk">
-      Disclaimer: Trading and investments in securities and derivatives
-      involve risk. Past performance does not guarantee future results.
-      The information provided is for educational/informational purposes
-      and should not be considered a guarantee of profits or personalized
-      investment advice.
-    </p>
-
-  </main>
-
-
-  <div class="sticky">
-    <a
-      href="https://telegram.me/+qSvpZaTaNX5mMWQ1"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      ✈️ JOIN FREE TELEGRAM CHANNEL
-    </a>
-  </div>
+</div>
 
 </body>
 </html>
